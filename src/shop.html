@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <link rel="stylesheet" href="../css/metisMenu.css">
+  <link rel="stylesheet" href="../css/meanmenu.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/mainShop.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/jQuery.score.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <!-- scrollup button color
+      Heart icon hovering effect  -->
+  <style>
+    #scrollUp{background:#000!important;}
+    .bi-heart{cursor:pointer;}
+    .bi-heart:hover:before{content: "\f415";}
+  </style>
+
+  <title>Redesign</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div id='header' data-id="1" data-type="2"></div>
+  <!-- web version include filter lists and product listing 2 column*5 lines  -->
+  <main role="main">
+    <section class="container-fluid centerPosition content d-none d-lg-block ">
+      <div class="transverse">
+        <div class="transverseL vertical">
+          <div class="menuproduce-item mt-0">
+            <h5>PRODUCT CATEGORIES</h5>
+            <ul class="color-909090" style="width:100%;height:100%;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+              <li style="padding:20px 0px;width:90%;">Headphone</li>
+              <li style="padding:20px 0px;width:90%;">Camera Lenses</li>
+              <li style="padding:20px 0px;width:90%;">Memory Cards</li>
+              <li style="padding:20px 0px;width:90%;">Laptops</li>
+              <li style="padding:20px 0px;width:90%;">Desktop Cases</li>
+              <li style="padding:20px 0px;width:90%;">Gaming PC</li>
+              <li style="padding:20px 0px;width:90%;">Tablets</li>
+              <li style="padding:20px 0px;width:90%;">Computer Accessories</li>
+            </ul>
+          </div>
+          <div class="menuproduce-item">
+            <h5>FILTER BY PRICE</h5>
+            <ul class="color-909090"
+              style="width:100%;height:100%;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+              <li style="padding:20px 0px;width:90%;"><i class="bi bi-circle text-18" style="margin-right: 10px;"></i> $0.00 - $99.99</li>
+              <li style="padding:20px 0px;width:90%;color: #000;"><i class="bi bi-check2-circle text-18" style="margin-right: 10px;"></i> $100.00 - $199.99</li>
+              <li style="padding:20px 0px;width:90%;"><i class="bi bi-circle text-18" style="margin-right: 10px;"></i> $200.00 - $299.99</li>
+              <li style="padding:20px 0px;width:90%;"><i class="bi bi-circle text-18" style="margin-right: 10px;"></i> $300.00 - $399.99</li>
+            </ul>
+          </div>
+          <div class="menuproduce-item">
+            <h5>FILTER BY COLOR</h5>
+            <ul class="color-909090"
+              style="width:100%;height:100%;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+              <li style="padding:20px 0px;width:90%;display: flex;align-items: center;">
+                <div style="width: 30px;height: 30px;background: #D4D4D4;border-radius: 50%;margin-right: 10px;"></div>
+                Silver
+              </li>
+              <li style="padding:20px 0px;width:90%;display: flex;align-items: center;">
+                <div style="width: 30px;height: 30px;background: #000;border-radius: 50%;margin-right: 10px;"></div>
+                Black
+              </li>
+            </ul>
+          </div>
+          <div class="menuproduce-item">
+            <h5>FILTER BY BRAND</h5>
+            <ul class="color-909090"
+              style="width:100%;height:100%;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+              <li style="padding:20px 0px;width:90%;">Apple</li>
+              <li style="padding:20px 0px;width:90%;">Sony</li>
+              <li style="padding:20px 0px;width:90%;">Asus</li>
+              <li style="padding:20px 0px;width:90%;">Canon</li>
+              <li style="padding:20px 0px;width:90%;">Acer</li>
+              <li style="padding:20px 0px;width:90%;">Microsoft</li>
+            </ul>
+          </div>
+        </div>
+        <div class="transverseR" style="flex: 1;margin-left: 30px;">
+          <div style="display: flex;align-items: center;">
+            <div style="flex: 1;margin-right: 30px;position: relative;">
+              <i class="bi bi-search " style="position: absolute;top: 8px;left: 15px;font-size: 30px;"></i>
+              <input class="transverseR-input" style="padding-left: 60px;font-size: 20px;" placeholder="Search"/>
+            </div>
+            <div style="width: 204px;height: 49px;margin-left: auto;border: 1px solid #707070;display: flex;align-items: center;justify-content: space-around;">
+              <div style="color: #000;">
+                <svg width="25" height="25" viewBox="0 0 25 25"  fill="currentColor">
+                  <path id="路径_64" data-name="路径 64" d="M11,1H1.833A.833.833,0,0,0,1,1.833V11a.833.833,0,0,0,.833.833H11A.833.833,0,0,0,11.833,11V1.833A.833.833,0,0,0,11,1Z" transform="translate(-1 -1)"/>
+                  <path id="路径_65" data-name="路径 65" d="M28,1H18.833A.833.833,0,0,0,18,1.833V11a.833.833,0,0,0,.833.833H28A.833.833,0,0,0,28.833,11V1.833A.833.833,0,0,0,28,1Z" transform="translate(-3.833 -1)"/>
+                  <path id="路径_66" data-name="路径 66" d="M11,18H1.833A.833.833,0,0,0,1,18.833V28a.833.833,0,0,0,.833.833H11A.833.833,0,0,0,11.833,28V18.833A.833.833,0,0,0,11,18Z" transform="translate(-1 -3.833)"/>
+                  <path id="路径_67" data-name="路径 67" d="M28,18H18.833a.833.833,0,0,0-.833.833V28a.833.833,0,0,0,.833.833H28A.833.833,0,0,0,28.833,28V18.833A.833.833,0,0,0,28,18Z" transform="translate(-3.833 -3.833)"/>
+                </svg>
+              </div>
+              <div  style="color: #707070;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+                  <rect id="矩形_150" data-name="矩形 150" width="10.833" height="25" transform="translate(14.167)"/>
+                  <rect id="矩形_151" data-name="矩形 151" width="10.833" height="25"/>
+                </svg>
+              </div>
+              <div  style="color: #707070;">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+                  <g id="组_56" data-name="组 56" transform="translate(-671 -474)">
+                    <rect id="矩形_319" data-name="矩形 319" width="9" height="25" transform="translate(671 499) rotate(-90)"/>
+                    <rect id="矩形_320" data-name="矩形 320" width="9" height="25" transform="translate(671 483) rotate(-90)"/>
+                  </g>
+                </svg>
+              </div>                                           
+            </div>
+          </div>
+          <div class="text-18 color-909090" style="margin-top: 27px;margin-bottom: 30px;display: flex;">
+            <div style="flex: 1;">Home > Product Listing</div>
+            <div style="flex: 1;">Showing 10 of 320 Products</div>
+          </div>
+          <div style="display: flex;flex-wrap: wrap;">
+            <div class="categ-item">
+              <div class="categ-item-img">
+                
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                  <a href="./Product.html"> <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20" ></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">                  
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+                  <i class="bi bi-heart text-20"></i>
+                  <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+                <div class="text-20">iphone11</div>
+                <div class="text-20 color-909090">Night Black</div>
+                <div style="display: flex;align-items: center;">
+                  <ul class="demo-default"></ul>
+                  <div class="text-20 color-909090 ml-2">4.8</div>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                  <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+                   <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mobile version -->
+    <section class="container-fluid content d-lg-none">
+      <div style="display: flex;align-items: center;">
+        <div style="flex: 1;position: relative;">
+          <i class="bi bi-search" style="position: absolute;top: 7px;left: 10px;"></i>
+          <input class="transverseR-input" placeholder="Search"/>
+        </div>
+      </div> 
+      <div class="text-30 color-909090" style="display: flex;margin-top: 10px;justify-content: space-between;">
+        <div style="padding: 5px;color: #000;">Featured</div>
+        <div style="padding: 5px;">Best Selling</div>
+        <div style="padding: 5px;">Newest</div>
+      </div>
+      <!--  style="display: flex;flex-wrap: wrap;" -->
+      <div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="categ-item">
+          <div class="categ-item-img">
+            <div style="text-align: right;padding-top: 10px;padding-right: 20px;">
+              <i class="bi bi-heart text-20"></i>
+              <img src="../img/11b.png" style="width:100%;height:80%;" alt="">
+            </div>
+          </div>
+          <div style="margin-left: 20px;display: flex;flex-flow: column;justify-content: space-around;flex: 1;">
+            <div class="text-20">iphone11</div>
+            <div class="text-20 color-909090">Night Black</div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul>
+              <div class="text-20 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="text-20 color-909090" style="flex: 1;">$1190.00</div>
+               <a href="./Product.html"><button type="button" class="c-btn btn-dark text-16 text-white"> Buy </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="container-fluid content-1 bg-dark py-4 d-none d-lg-block" style="background-color: #000!important;">
+      <div style="display: flex; justify-content: space-around;">
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/1.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/2.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/3.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/4.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JQuery and Bootstrap integration package -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/metisMenu.min.js"></script> 
+  <script src="../js/jquery.meanmenu.min.js"></script> 
+  <script src="../js/wow.min.js"></script> <!-- Page scrolling animation -->
+  <script src="../js/waypoints.min.js"></script> <!-- Scrollspy -->
+  <script src="../js/jquery.scrollUp.min.js"></script> <!-- Scroll up -->
+  <script src="../js/jQuery.score.js"></script>
+  <script src="../js/main.js"></script>
+  
+  <!-- rating script--The score shows 4 stars by default -->
+  <script>
+    $('.demo-default').score({
+      score: 4,
+      size: 20,
+    });
+  </script>
+</body>
+<style>
+  button{
+      background-color: #000!important;
+  }
+  button:hover{
+      background-color: #343a40!important;
+  }
+</style>
+</html>

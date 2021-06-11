@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <link rel="stylesheet" href="../css/metisMenu.css">
+  <link rel="stylesheet" href="../css/meanmenu.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- <link rel="stylesheet" href="../css/mainShop.css"> -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/jQuery.score.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-container .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet-active{
+        background: #909090 !important;
+    }
+	#scrollUp{background:#000!important;}
+	.bi-heart{cursor:pointer;}
+	.bi-heart:hover:before{content: "\f415";}
+  </style>
+  <title>Rosman</title>
+</head>
+
+<body>
+  <!-- web version: 
+    include Sliding display of products
+    Product description
+    recommended product list-->
+  <div id='header' data-id="1" data-type="3"></div>
+  <main role="main" style="overflow: hidden;max-width: 100vw;">
+    <section class="container-fluid centerPosition content d-none d-lg-block" style="padding-right: 60px;">
+        <div class="color-909090 mb-2">Home > Product Listing > Product</div>
+        <div class="row">
+            <div class="col-7" style="height: 650px;">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background:#F5F6F8 url(../img/slide1.png) no-repeat center; background-size:70% auto;"></div>
+                    <div class="swiper-slide" style="background:#F5F6F8 url(../img/slide2.png) no-repeat center; background-size:70% auto;"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-5" style="display: flex;flex-flow: column;justify-content: space-between;">
+                <div class="text-40">iPhone 11 64G</div>
+                <div>
+                  <ul class="demo-default"></ul>
+                </div>
+                <div class="text-24 color-909090">Apple</div>
+                <div style="display: flex;padding: 20px 0;justify-content: space-around;border-bottom: 1px solid #eee;">
+                    <div style="width: 50px;height: 50px;background: #1F2120;border-radius: 50%;display: flex;justify-content: center;align-items: center;">
+                        <i class="bi bi-check2 text-30" style="color: #fff;"></i>
+                    </div>
+                    <div style="width: 50px;height: 50px;background: #F9F6EF;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+                    </div>
+                    <div style="width: 50px;height: 50px;background: #FFE681;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+                    </div>
+                    <div style="width: 50px;height: 50px;background: #ADE0CD;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+                    </div>
+                    <div style="width: 50px;height: 50px;background: #D1CDDB;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+                    </div>
+                    <div style="width: 50px;height: 50px;background: #BA0C2F;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+                    </div>
+                </div>
+                <div class="text-50">$1499.00</div>
+                <div style="display: flex;justify-content: space-between;">
+                    <div class="text-30" style="border: 1px solid #707070;width: 193px;height: 73px;display: flex;justify-content: space-around;align-items: center;">
+                        <div><i class="bi bi-dash-lg text-20"></i></div>
+                            1
+                        <div><i class="bi bi-plus-lg text-20"></i></div>
+                    </div>
+                    <a href="./Cart.html" type="button" class="c-btn btn-dark text-24 text-white" style="background-color: #000; line-height:56px"> ADD TO CART </a>
+                </div>
+                <div class="row text-24 color-909090 mt-4">
+                    <div class="col-12">
+                        <svg  width="43.725" height="38.956" viewBox="0 0 43.725 38.956">
+                            <g transform="translate(1 1)">
+                              <path d="M39.392,6.332a11.373,11.373,0,0,0-17.53,1.759A11.379,11.379,0,1,0,4.332,22.427l17.53,17.528,17.53-17.53A11.38,11.38,0,0,0,39.392,6.332Z" transform="translate(-1 -3)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                            </g>
+                          </svg>
+                         <span style="margin-left:20px;">Add To Wishlist</span>
+                    </div>
+                    <div class="col-12">
+                        <svg width="41.724" height="29.207" viewBox="0 0 41.724 29.207">
+                            <path d="M18.624,28.776H4v4.172H18.624v6.259l8.324-8.345-8.324-8.345ZM31.1,26.69V20.431H45.724V16.259H31.1V10l-8.324,8.345Z" transform="translate(-4 -10)" fill="#707070"/>
+                        </svg>
+                        <span style="margin-left:  20px;">Add To Compare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Description, review, additional information -->
+        <div class="row">
+            <div class="col-7">
+                <div class="row mt-4 text-30" style="padding-bottom: 5px;border-bottom: 1px solid #eee;">
+                    <div class="col-auto">
+                        <span style="padding-bottom: 5px;border-bottom: 3px solid #000;">Description</span>
+                    </div>
+                    <div class="col-auto color-909090">Review</div>
+                    <div class="col-auto color-909090">Additional Information</div>
+                </div>
+                <div class="text-23 mt-5">
+                    <div>
+                        - 6.1-inch Liquid Retina HD LCD display
+                    </div>
+                    <div>
+                        - Water and dust resistance (2 metres for up to 30 minutes, IP68)
+                    </div>
+                    <div>
+                        - Dual-camera system with 12-megapixel Ultra Wide and Wide cameras
+                    </div>
+                </div>
+                <div class="mt-5" style="display: flex;">
+                    <i class="bi bi-play-fill"></i>
+                    <span class="text-23">COMPOSITION AND CARE</span>
+                </div>
+                <div class="mt-3" style="display: flex;">
+                    <i class="bi bi-play-fill"></i>
+                    <span class="text-23">SHIPPING AND RETURN</span>
+                </div>
+            </div>
+        </div>
+        <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);position: fixed;bottom: 0;left: 0;right: 0;height: 100px;padding: 20px 180px;z-index: 9;display: flex;">
+          <button type="button" id="toaddcar" class="c-btn btn-dark text-30 text-white" style="flex: 1;"> ADD TO CART </button>
+            <button type="button" class="c-btn btn-light ml-4" style="margin-left: auto;display: flex;align-items: center;justify-content: center;"> <i class="bi bi-reply-fill" style="font-size: 30px;padding:0; color:#fff;"></i> </button>
+        </div>
+    </section>
+    <!-- Recommended product list -->
+    <section class="container-fluid content-title d-none d-lg-block">
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+          <div class="text-50" style="flex: 1;">You May Also Like</div>
+          <div class="text-40">Show all</div>
+          <div class="text-40"><i class="bi bi-caret-right-fill"></i></div>
+        </div>
+        <div class="swiper-container1 categ pb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide categ-item">
+              <div  class="categ-item-img">
+                <div style="text-align: right;padding-top: 20px;padding-right: 40px;">
+                  
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/surface.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">Surface Computer</div>
+                <div class="text-30">Night Black</div>
+                <div class="text-30 mt-2 color-909090">Surface</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="text-33 color-909090">$2200.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+              </div>
+            </div>
+            <div class="swiper-slide categ-item">
+              <div  class="categ-item-img">
+                <div style="text-align: right;padding-top: 20px;padding-right: 40px;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/air.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">AirPods Pro</div>
+                <div class="text-30">White</div>
+                <div class="text-30 mt-2 color-909090">Apple</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="text-33 color-909090">$399.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+              </div>
+            </div>
+            <div class="swiper-slide categ-item">
+              <div  class="categ-item-img">
+                <div style="text-align: right;padding-top: 20px;padding-right: 40px;position: relative;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/beats.png" style="width:100%;height:100%;" alt=""> 
+                </div>
+                <div class="text-30">Beats</div>
+                <div class="text-30">Night Black</div>
+                <div class="text-30 mt-2 color-909090">Beats</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="text-33 color-909090">$200.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+              </div>
+            </div>
+            <div class="swiper-slide categ-item">
+              <div class="categ-item-img">
+                <div style="text-align: right;padding-top: 20px;padding-right: 40px;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/11b.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">iphone11</div>
+                <div class="text-30">Night Black</div>
+                <div class="text-30 mt-2 color-909090">Apple</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="text-33 color-909090">$2200.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- mobile version -->
+    <section class="container-fluid content d-lg-none" style="padding-right: 10px;position: relative;height: 370px;">
+      <div class="swiper-container" style="height: 310px;position: fixed;left: 0;right: 0;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:#F5F6F8 url(../img/slide1.png) no-repeat center; background-size:70% auto;"></div>
+            <div class="swiper-slide" style="background:#F5F6F8 url(../img/slide2.png) no-repeat center; background-size:70% auto;"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="container-fluid content-title d-lg-none" style="background: #fff;z-index: 99;position: relative;">
+      <div style="display: flex;flex-flow: column;justify-content: space-between;">
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+          <div style="font-size: 26px;">iPhone 11 64G</div>
+          <i class="bi bi-heart-fill" style="font-size: 23px;"></i>
+        </div>
+        <div style="font-size: 23px;" class="color-909090">Apple</div>
+        <div style="font-size: 21px;color: #FF2D55;margin-top: 10px;border-bottom: 1px solid #eee;padding-bottom: 10px;">$1499.00</div>
+        <div style="display: flex;padding: 20px 0;justify-content: space-around;border-bottom: 1px solid #eee;">
+            <div style="width: 40px;height: 40px;background: #1F2120;border-radius: 50%;display: flex;justify-content: center;align-items: center;">
+                <i class="bi bi-check2 text-30" style="color: #fff;"></i>
+            </div>
+            <div style="width: 40px;height: 40px;background: #F9F6EF;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+            </div>
+            <div style="width: 40px;height: 40px;background: #FFE681;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+            </div>
+            <div style="width: 40px;height: 40px;background: #ADE0CD;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+            </div>
+            <div style="width: 40px;height: 40px;background: #D1CDDB;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+            </div>
+            <div style="width: 40px;height: 40px;background: #BA0C2F;border-radius: 50%;display: flex;justify-content: center;align-items: center;"> 
+            </div>
+        </div> 
+      </div>
+      <!-- Description, review and additional information -->
+      <div style="margin-top: 10px;border-bottom: 1px solid #eee;font-size: 17px;display: flex;justify-content: space-between;">
+          <div style="padding-bottom: 5px;border-bottom: 3px solid #000;">Description</div>
+          <div class="color-909090">Review</div>
+          <div class="color-909090">Additional Information</div>
+      </div>
+      <div class="text-23 mt-3">
+          <div>
+              - 6.1-inch Liquid Retina HD LCD display
+          </div>
+          <div>
+              - Water and dust resistance (2 metres for up to 30 minutes, IP68)
+          </div>
+          <div>
+              - Dual-camera system with 12-megapixel Ultra Wide and Wide cameras
+          </div>
+      </div>
+      <div class="mt-3" style="display: flex;">
+          <i class="bi bi-play-fill"></i>
+          <span class="text-23">COMPOSITION AND CARE</span>
+      </div>
+      <div class="mt-1" style="display: flex;">
+          <i class="bi bi-play-fill"></i>
+          <span class="text-23">SHIPPING AND RETURN</span>
+      </div>
+      <!-- Recommended  product list -->
+      <div class="mt-2" style="display: flex;justify-content: space-between;align-items: center;">
+          <div class="text-50" style="flex: 1;">You May Also Like</div>
+          <div class="text-40">Show all</div>
+          <div class="text-40"><i class="bi bi-caret-right-fill"></i></div>
+      </div>
+      <div class="swiper-container1 categ" style="margin-bottom: 100px;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 165px;">
+            <div  class="categ-item-img" style="height: auto;">
+              <div style="text-align: right;padding-top: 10px;padding-right: 15px;">
+                <i class="bi bi-heart text-30"></i>
+                <img src="../img/surface.png" style="width:100%;height:100%;" alt="">
+                
+              </div>
+              <div class="text-30">Surface Book</div>
+              <div class="text-30">Night Black</div>
+              <div class="text-30 mt-2 color-909090">Surface</div>
+            </div>
+            <div style="display: flex;align-items: center;">
+              <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;">
+              <div class="color-909090" style="font-size: 14px;">$2200.00</div>
+              <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-white" style="font-size: 9;"> Buy </button></a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 165px;">
+              <div  class="categ-item-img" style="height: auto;">
+                <div style="text-align: right;padding-top: 10px;padding-right: 15px;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/airpods.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">AirPods</div>
+                <div class="text-30"> White </div>
+                <div class="text-30 mt-2 color-909090">Apple</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="color-909090" style="font-size: 14px;">$2200.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-white" style="font-size: 9;"> Buy </button></a>
+              </div>
+          </div>
+          <div class="swiper-slide" style="width: 165px;">
+              <div  class="categ-item-img" style="height: auto;">
+                <div style="text-align: right;padding-top: 10px;padding-right: 15px;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/beats.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">Beats</div>
+                <div class="text-30">Night Black</div>
+                <div class="text-30 mt-2 color-909090">Beats</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="color-909090" style="font-size: 14px;">$2200.00</div>
+                <a href="./Cart.html"><button type="button" class="c-btn btn-dark text-white" style="font-size: 9;"> Buy </button></a>
+              </div>
+          </div>
+          <div class="swiper-slide" style="width: 165px;">
+              <div  class="categ-item-img" style="height: auto;">
+                <div style="text-align: right;padding-top: 10px;padding-right: 15px;">
+                  <i class="bi bi-heart text-30"></i>
+                  <img src="../img/surface.png" style="width:100%;height:100%;" alt="">
+
+                </div>
+                <div class="text-30">iphone11</div>
+                <div class="text-30">Night Black</div>
+                <div class="text-30 mt-2 color-909090">Apple</div>
+              </div>
+              <div style="display: flex;align-items: center;">
+                <ul class="demo-default"></ul> <div class="text-30 color-909090 ml-2">4.8</div>
+              </div>
+              <div style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="color-909090" style="font-size: 14px;">$2200.00</div>
+                <button type="button" class="c-btn btn-dark text-white" style="font-size: 9;"> Buy </button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fixed shopping cart button -->
+      <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);position: fixed;bottom: 0;left: 0;right: 0;height: 73px;padding: 15px 20px;z-index: 9;display: flex;">
+        <a href="./Cart.html" type="button" class="c-btn btn-dark text-white" style="background-color: #000; flex: 1;font-size: 13px; line-height:28px;">ADD TO CART</a>
+        <button type="button" class="c-btn btn-light ml-4" style="margin-left: auto;display: flex;align-items: center;justify-content: center;"> <i class="bi bi-reply-fill" style="font-size: 20px;padding:0; color:#fff;"></i> </button>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="container-fluid content-1 bg-dark py-4 d-none d-lg-block" style="background-color: #000!important;">
+      <div style="display: flex; justify-content: space-around;">
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/1.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/2.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/3.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div style="background: #000 url(../img/4.png) no-repeat center; width: 60px;height: 60px;"> </div>
+          <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+            <div class="text-24 text-white">Free Delivery</div>
+            <div class="text-18 text-white">From $50</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- jQuery and Bootstrap integration package (integrated with Popper) -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/metisMenu.min.js"></script> 
+  <script src="../js/jquery.meanmenu.min.js"></script> 
+  <script src="../js/wow.min.js"></script> <!-- Page scrolling animation -->
+  <script src="../js/waypoints.min.js"></script> <!-- Scrollspy -->
+  <script src="../js/jquery.scrollUp.min.js"></script> <!-- Scrollup -->
+  <script src="../js/swiper.min.js"></script>
+  <script src="../js/jQuery.score.js"></script>
+  <script src="../js/main.js"></script>
+  <!-- Link to shopping cart page -->
+  <script>
+    var btnToAddCar=document.getElementById("toaddcar");
+    btnToAddCar.onclick=function(){
+      window.location.href="./Cart.html"
+    }
+  </script>
+  <script>
+    $('.demo-default').score({
+      score: 4,
+      size: 20,
+    });
+    var mySwiper = new Swiper ('.swiper-container1', { 
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      roundLengths : true,
+    })
+    var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+<!-- Button color and hover color -->
+<style>
+  button{
+      background-color: #000!important;
+  }
+  button:hover{
+      background-color: #343a40!important;
+  }
+</style>
+
+</html>

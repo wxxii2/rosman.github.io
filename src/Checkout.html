@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/metisMenu.css">
+    <link rel="stylesheet" href="../css/meanmenu.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainShop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #scrollUp{background:#000!important;}
+        .bi-heart{cursor:pointer;}
+        .bi-heart:hover:before{content: "\f415";}
+    </style>
+
+    <title>Rosman</title>
+</head>
+
+<body>
+    <div id='header' data-id="1" data-type="4"></div>
+
+    <main role="main">
+        <!-- Web version include: payment form and order detial -->
+        <section class="container-fluid centerPosition content d-none d-lg-block ">
+            <div class="text-18 color-909090" style="margin-top: 27px;margin-bottom: 30px;display: flex;">
+                <div style="flex: 1;">Home > Product Listing > Product > Cart</div>
+            </div>
+            <div class="text-40">Checkout</div>
+            <div class="c-wrapper" style="margin-top:-50px; margin-left:-20px; display: flex;">
+                <div class="c-card">  
+                  <h2 class="c-visa">VISA</h2>
+                  <h3 class="c-num"> **** **** **** ****</h3>
+                    <h4>Name</br>xx xx</h4>
+                    <h4>EXP</br>10/21</h4>
+                    <h4>CVC</br>000</h4>
+                </div>
+                <div class="c-main">
+                  <div class="c-content">
+                    <h1>Payment Details</h1>
+                    <form>
+                   <!--   <label>Name</label>-->
+                      <input id="name" type="name" value="Name On Card">
+                     <!-- <label>Card Number</label>-->
+                      <input type="text" value="Card Number">
+                    <!--  <label>Expiration Date</label>-->
+                      <input type="month" value="2021-10">
+                      <input type="user" value="000">
+                    <!-- Address -->
+                      <input type="address" value="Unit">
+                      <input type="street" value="Street">
+                      <input type="suburb" value="Suburb">
+                    <!-- Phone number -->
+                      <input type="phno" value="Contact Number">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- Order details -->
+                <div class="BuyCarToCalTotal" style="margin-top:50px; margin-left:800px">
+                    <div class="totalTop">
+                        <div class="text-24">Order Total</div>
+                        <div class="sub text-20 mt-5">
+                            <span class="mr-3 color-909090" style="width: 100px;">Subtotal</span>
+                            <div class="ship">$1,499.00</div>
+                        </div>
+                        <div class="sub text-20 mt-3">
+                            <span class="mr-3 color-909090" style="width: 100px;">Shipping</span>
+                            <div class="ship">
+                                <ul>
+                                    <li style="display: flex;align-items: center;">
+                                        <div class="shipcircle"></div>
+                                        <span>Free Shipping</span>
+                                    </li>
+                                    <li style="display: flex;align-items: center;">
+                                        <div class="shipcircle">
+                                            <div class="fileshipcircle"></div>
+                                        </div>
+                                        <span>$10 - Internationnal</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="totalBottom mt-5">
+                        <div class="sub text-20 mb-4">
+                            <span class="mr-3 color-909090" style="width: 100px;">Subtotal</span>
+                            <div class="ship  text-24">$1,499.00</div>
+                        </div>
+                    
+                        <button type="button" class="c-btn btn-dark text-16 text-white mt-3">PROCEED TO CHECKOUT</button>
+                      
+                        <button type="button" id="btntoshop" class="c-btn btn-dark text-16 text-white bg-secondary mt-3" >BACK TO SHOPPING</button>
+                    </div>
+                </div>
+            </div>          
+        </section>
+        <!-- Mobile version -->
+        <section class="container-fluid content d-lg-none">
+            <div style="font-size: 34px;">Checkout</div>
+            <div class="c-wrapper" style="margin-top:-100px; margin-left:-20px; display: flex;">
+                <div class="c-card">  
+                  <h2 class="c-visa">VISA</h2>
+                  <h3 class="c-num"> **** **** **** ****</h3>
+                    <h4>Name</br>xx xx</h4>
+                    <h4>EXP</br>10/21</h4>
+                    <h4>CVC</br>000</h4>
+                </div>
+                <div class="c-main">
+                  <div class="c-content">
+                    <h1>Payment Details</h1>
+                    <form>
+                   <!--   <label>Name</label>-->
+                      <input id="name" type="name" value="Name On Card">
+                     <!-- <label>Card Number</label>-->
+                      <input type="text" value="Card Number">
+                    <!--  <label>Expiration Date</label>-->
+                      <input type="month" value="2021-10">
+                      <input type="user" value="000">
+                    <!-- Address -->
+                      <input type="address" value="Unit">
+                      <input type="street" value="Street">
+                      <input type="suburb" value="Suburb">
+                    <!-- Phone number -->
+                      <input type="phno" value="Contact Number">
+                    </form>
+                  </div>
+                </div>
+              </div>
+     
+            <div style="margin-top: 200px;font-size: 17px;padding-bottom: 70px;border-top: 1px solid #666;padding-top: 10px;">
+                <div class="color-909090" style="display: flex;justify-content: space-between;margin-top: 5px;">
+                    <div>Shipping fee</div>
+                    <div>$10.00</div>
+                </div>
+                <div class="color-909090" style="display: flex;justify-content: space-between;margin-top: 5px;">
+                    <div>Sub total</div>
+                    <div>$1499.00</div>
+                </div>
+                <div style="display: flex;justify-content: space-between;margin-top: 5px;">
+                    <div>Total</div>
+                    <div>$1509.00</div>
+                </div>
+            </div>
+            <div style="position: fixed;bottom: 0;left: 0;right: 0;">
+                <button type="button" class="c-btn btn-dark text-16 text-white" style="width: 100%;height: 69px;">CHECKOUT</button>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="container-fluid content-1 bg-dark py-4 d-none d-lg-block" style="background-color: #000!important;">
+            <div style="display: flex; justify-content: space-around;">
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/1.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/2.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/3.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/4.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- jQuery and Bootstrap integration package (integrated with Popper) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/metisMenu.min.js"></script> 
+    <script src="../js/jquery.meanmenu.min.js"></script> 
+    <script src="../js/wow.min.js"></script> <!-- Page scrolling animation -->
+    <script src="../js/waypoints.min.js"></script> <!-- scrollspy -->
+    <script src="../js/jquery.scrollUp.min.js"></script> <!-- scrollup -->
+    <script src="../js/main.js"></script>
+</body>
+<script>
+    var btntoshop=document.getElementById("btntoshop");
+    btntoshop.onclick=function(){
+        window.location.href="./shop.html"
+    }   
+</script>
+<style>
+    button{
+        background-color: #000!important;
+    }
+    button:hover{
+        background-color: #343a40!important;
+    }
+</style>
+</html>

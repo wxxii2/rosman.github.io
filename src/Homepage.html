@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap  CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/metisMenu.css">
+    <link rel="stylesheet" href="../css/meanmenu.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/star-rating.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/jQuery.score.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <style>
+    #scrollUp{background:#000!important;}
+	.bi-heart{cursor:pointer;}
+	.bi-heart:hover:before{content: "\f415";}
+    </style>
+
+    <!-- <script src="../js/jquery.min.js" ></script> -->
+    <title>Rosman</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div id='header' data-id="0" data-type="1"></div>
+
+    <main role="main">
+        <!--  web version include promotion banner; product categories; best selling list -->
+        <section class="container-fluid content pr-0" style="background: #F0F0F0;">
+            <div class=" d-none d-lg-block">
+                <div class="Black" style="display: flex;flex-wrap: nowrap;overflow: hidden;height: 100%;">
+                    <div style="min-width: 400px;">
+                        <div class="text-50 mt-xl-5 pt-xl-5  mt-lg-4 pt-lg-4 color-909090">
+                            Clearance Sale
+                        </div>
+                        <div class="text-90 mt-5">
+                            Sale Up To 30% Off
+                        </div>
+                        <a href="./shop.html">
+                            <button type="button" class="c-btn btn-dark text-36 mt-5 text-white">Shop Now</button>
+                        </a>
+                    </div>
+                    <div style="flex:1">
+                        <img style="width: 1210px;height: 100%;" src="../img/computer.png" />
+                    </div>
+                </div>
+            </div>
+            <!-- mobile version--promotion banner -->
+            <div class="Black d-lg-none" style="display: flex;flex-wrap: nowrap;overflow: hidden;height: 288px;">
+                <div style="min-width: 200px;">
+                    <div class="text-50 mt-4 color-909090">
+                        Clearance Sale
+                    </div>
+                    <div class="text-90" >
+                        Sale Up To 30%
+                    </div>
+                    <button type="button" class="c-btn btn-dark text-36 mt-2 text-white">Shop Now</button>
+                </div>
+                <div style="flex:1">
+                    <img style="width: 400px;height: 100%;" src="../img/computer.png" />
+                </div>
+            </div>
+        </section>
+        <!-- product categories -->
+        <section class="container-fluid content-title">
+            <div style="display: flex;justify-content: space-between;align-items: center;">
+                <div class="text-60" style="flex: 1;">Categories</div>
+                <a href="./shop.html">
+                    <div class="text-40">Show all</div>
+                </a>
+
+                <div class="text-40 ml-3"><i class="bi bi-caret-right-fill"></i></div>
+            </div>
+            <div class="swiper-container best">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img">
+                            <img src="../img/laptop.png" style="width:100%;height:100%;" alt="">
+                        </div>
+                        <div class="text-30 mt-3">Laptops</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img">
+                            <img src="../img/camera.png" style="width:100%;height:100%;" alt="">
+                        </div>
+                        <div class="text-30 mt-3">Cameras</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img">
+                            <img src="../img/phone.png" style="width:100%;height:100%;" alt="">
+                        </div>
+                        <div class="text-30 mt-3">Mobiles</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img"><img src="../img/headphone.png" style="width:100%;height:100%;" alt=""></div>
+                        <div class="text-30 mt-3">Headphones</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img"><img src="../img/gaming.png" style="width:100%;height:100%;" alt=""></div>
+                        <div class="text-30 mt-3">Gamings</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img"><img src="../img/monitor.png" style="width:100%;height:100%;" alt=""></div>
+                        <div class="text-30 mt-3">Monitors</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                    <div class="swiper-slide best-item">
+                        <div class="best-item-img"><img src="../img/tv.png" style="width:100%;height:100%;" alt=""></div>
+                        <div class="text-30 mt-3">TVs</div>
+                        <div class="text-23">1126 items</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Best selling product list -->
+        <section class="container-fluid content-title">
+            <div style="display: flex;justify-content: space-between;align-items: center;">
+                <div class="text-60" style="flex: 1;">Best Selling</div>
+                <a href="./shop.html">
+                    <div class="text-40">Show all</div>
+                </a>
+                <div class="text-40"><i class="bi bi-caret-right-fill"></i></div>
+            </div>
+            <div class="swiper-container categ d-none d-lg-block">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide categ-item">
+                        <div class="categ-item-img">
+                            <div style="text-align: right;padding-top: 20px;padding-right: 40px;position: relative;">
+                                <img src="../img/surface.png" style="width:100%;height:100%;" alt="">
+                                <i class="bi bi-heart text-30" style="position: absolute;right:10px;top:20px;"></i>
+                            </div>
+                            <div class="text-30">Surface Book</div>
+                            <div class="text-30">Night Black</div>
+                            <div class="text-30 mt-2 color-909090">HP</div>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div class="text-33 color-909090">$2200.00</div>
+                            <a href="./Product.html">
+                                <button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide categ-item">
+                        <div class="categ-item-img">
+                            <div style="text-align: right;padding-top: 20px;padding-right: 40px;position: relative;">
+                                <img src="../img/air.png" style="width:100%;height:100%;" alt="">
+                                <i class="bi bi-heart text-30" style="position: absolute;right:10px;top:20px;"></i>
+                            </div>
+                            <div class="text-30">AirPods Pro</div>
+                            <div class="text-30">White</div>
+                            <div class="text-30 mt-2 color-909090">HP</div>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div class="text-33 color-909090">$399.00</div>
+                            <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide categ-item">
+                        <div class="categ-item-img">
+                            <div style="text-align: right;padding-top: 20px;padding-right: 40px;position: relative;">
+                                <img src="../img/beats.png" style="width:100%;height:100%;" alt="">
+                                <i class="bi bi-heart text-30" style="position: absolute;right:10px;top:20px;"></i>
+                            </div>
+                            <div class="text-30">Beats</div>
+                            <div class="text-30">Night Black</div>
+                            <div class="text-30 mt-2 color-909090">HP</div>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div class="text-33 color-909090">$200.00</div>
+                            <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide categ-item">
+                        <div class="categ-item-img">
+                            <div style="text-align: right;padding-top: 20px;padding-right: 40px;position: relative;">
+                                <img src="../img/11b.png" style="width:100%;height:100%;" alt="">
+                                <i class="bi bi-heart text-30" style="position: absolute;right:10px;top:20px;"></i>
+                            </div>
+                            <div class="text-30">iphone11</div>
+                            <div class="text-30">Night Black</div>
+                            <div class="text-30 mt-2 color-909090">HP</div>
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                        <div style="display: flex;align-items: center;justify-content: space-between;">
+                            <div class="text-33 color-909090">$1190.00</div>
+                            <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categ-v d-lg-none">
+                <div class="categ-item">
+                    <div class="categ-item-img"><img src="../img/surface.png" style="width:100%;height:100%;" alt=""></div>
+                    <div style="flex: 1;margin-left: 20px;display: flex;flex-flow: column;justify-content: space-between;">
+                        <div class="text-30">Surface Book</div>
+                        <div class="text-23 color-909090">$2200.00</div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                    </div>
+                    <div style="display: flex;align-items: center;
+            ">
+                        <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                    </div>
+                </div>
+                <div class="categ-item">
+                    <div class="categ-item-img"><img src="../img/airpods.png" style="width:100%;height:100%;" alt=""></div>
+                    <div style="flex: 1;margin-left: 20px;display: flex;flex-flow: column;justify-content: space-between;
+            ">
+                        <div class="text-30">Airpods Pro</div>
+                        <div class="text-23 color-909090">$399.00</div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                    </div>
+                    <div style="display: flex;align-items: center;
+            ">
+                        <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                    </div>
+                </div>
+                <div class="categ-item">
+                    <div class="categ-item-img"><img src="../img/ipb.png" style="width:100%;height:100%;" alt=""></div>
+                    <div style="flex: 1;margin-left: 20px;display: flex;flex-flow: column;justify-content: space-between;">
+                        <div class="text-30">iphone11</div>
+                        <div class="text-23 color-909090">$1190.00</div>
+                        <div style="display: flex;align-items: center;">
+                            <ul class="demo-default"></ul>
+                            <div class="text-30 color-909090 ml-2">4.8</div>
+                        </div>
+                    </div>
+                    <div style="display: flex;align-items: center;">
+                        <a href="./Product.html"><button type="button" class="c-btn btn-dark text-30 text-white"> Buy </button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="container-fluid content-1 bg-dark py-4 d-none d-lg-block" style="background-color: #000!important;">
+            <div style="display: flex; justify-content: space-around;">
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/1.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/2.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/3.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+              <div style="display: flex;">
+                <div style="background: #000 url(../img/4.png) no-repeat center; width: 60px;height: 60px;"> </div>
+                <div class="ml-3" style="display: flex;flex-flow: column;justify-content: space-between;">
+                  <div class="text-24 text-white">Free Delivery</div>
+                  <div class="text-18 text-white">From $50</div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- jQuery and Bootstrap integration package (integrated with Popper) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/metisMenu.min.js"></script>
+    <script src="../js/jquery.meanmenu.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <!-- Page scrolling animation -->
+    <script src="../js/waypoints.min.js"></script>
+    <!-- Scrollspy -->
+    <script src="../js/jquery.scrollUp.min.js"></script>
+    <!-- Scrollup -->
+    <script src="../js/star-rating.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jQuery.score.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- swipe script -->
+    <script>
+        $('.demo-default').score({
+            score: 4,
+            size: 30,
+        });
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            roundLengths: true,
+        })
+        var mySwiper = new Swiper('.swiper-container-1', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            direction: 'vertical',
+            setWrapperSize: true,
+        });
+    </script>
+</body>
+<style>
+    button {
+        background-color: #000!important;
+    }
+    
+    button:hover {
+        background-color: #343a40!important;
+    }
+</style>
+
+</html>
