@@ -7,7 +7,7 @@
     let ids = id.split("-")
     let list = [{
         name: 'HOME',
-        href: './Homepage.html'
+        href: './index.html'
     },
     {
         name: 'SHOP',
@@ -15,7 +15,7 @@
     },
     {
         name: 'Rosman',
-        href: './Homepage.html',
+        href: './index.html',
         type: 'logo'
     },
     {
