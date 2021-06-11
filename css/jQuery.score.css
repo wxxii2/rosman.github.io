@@ -1,7 +1,6 @@
 /* Note:
-    ★的Unicode编码是:\2605，☆的Unicode编码是:\2606.
-    Unicode 在 6.0 已经添加了一组 pentagram（U+26E4 至 26E7）,
-    查询见：http://www.unicode.org/charts/PDF/U2600.pdf .
+    The Unicode encoding for ★ is:\2605 and for ☆ is:\2606.
+    http://www.unicode.org/charts/PDF/U2600.pdf .
 */
 
 .scorejs {
